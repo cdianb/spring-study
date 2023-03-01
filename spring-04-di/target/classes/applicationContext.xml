@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.mei.pojo.Address">
+        <property name="address" value="软件园二期"/>
+    </bean>
+
+    <bean id="student" class="com.mei.pojo.Student">
+<!--        第一种：普通值注入，直接使用value-->
+        <property name="name" value="徐伟亮"/>
+
+<!--        第二种：bean注入， 使用ref-->
+        <property name="address" ref="address"/>
+
+<!--        第三种：数组注入，-->
+        <property name="book">
+            <array>
+                <value>红楼梦</value>
+                <value>西游记</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+
+<!--       第四种： list注入-->
+        <property name="hobbies">
+            <list>
+                <value>吃饭</value>
+                <value>睡觉</value>
+                <value>打麻将</value>
+            </list>
+        </property>
+        
+<!--        第五种：map注入-->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="123456156767890098"/>
+                <entry key="银行卡" value="4234214241312"/>
+                <entry key="员工卡" value="9521"/>
+            </map>
+        </property>
+
+<!--        第六种：set注入-->
+        <property name="games">
+            <set>
+                <value>王者荣耀</value>
+                <value>欢乐斗地主</value>
+            </set>
+        </property>
+
+<!--        第七种-->
+        <property name="wife">
+            <null/>
+        </property>
+
+<!--        第八种-->
+        <property name="info">
+            <props>
+                <prop key="学号">15023454</prop>
+                <prop key="姓名">徐伟亮</prop>
+                <prop key="年龄">26</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
