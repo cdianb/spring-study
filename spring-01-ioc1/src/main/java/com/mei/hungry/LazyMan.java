@@ -50,6 +50,7 @@ public class LazyMan {
     //单线程下正常
     //多线程并发会有问题 ------>所以需要有双层检测
     public static void main(String[] args) throws Exception {
+        
 //        for(int i = 0; i < 10; i++){
 //            new Thread(new Runnable() {
 //                public void run(){
