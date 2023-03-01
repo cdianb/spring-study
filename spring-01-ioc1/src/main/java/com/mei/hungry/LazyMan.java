@@ -58,7 +58,7 @@ public class LazyMan {
 //
 //            }).start();
 //        }
-        //反射会破坏单例
+        //反射会破坏单例      
 //        LazyMan instance = LazyMan.getInstance();
         Field liang = LazyMan.class.getDeclaredField("liang");     //可以通过反射拿到属性，并修改值，此时还是不安全的
         liang.setAccessible(true);
