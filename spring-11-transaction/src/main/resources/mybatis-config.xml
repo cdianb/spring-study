@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration 核心配置文件-->
+<configuration>
+<!--    引入外部配置文件-->
+<!--    <properties resource="db.properties">-->
+<!--        <property name="username" value="root"/>-->
+<!--    </properties>-->
+<!--    -->
+<!--    <settings>-->
+<!--&lt;!&ndash;        标准日志工厂&ndash;&gt;-->
+<!--&lt;!&ndash;        <setting name="logImpl" value="STDOUT_LOGGING"/>&ndash;&gt;-->
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+<!--    </settings>-->
+
+<!--    可以给实体类取别名-->
+    <typeAliases>
+<!--        <typeAlias type="com.mei.domain.User" alias="User"/>-->
+        <package name="com.mei.pojo"/>
+    </typeAliases>
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${driver}"/>-->
+<!--                <property name="url" value="${url}"/>-->
+<!--                <property name="username" value="${username}"/>-->
+<!--                <property name="password" value="${password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--        <environment id="test">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/db_medical_inspection?characterEncoding=utf8&amp;useSSL=false&amp;useUnicode=true"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="123456"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+<!--&lt;!&ndash;    绑定接口&ndash;&gt;-->
+<!--    <mappers>-->
+<!--        <mapper class="com.mei.dao.UserMapper"/>-->
+<!--    </mappers>-->
+</configuration>
