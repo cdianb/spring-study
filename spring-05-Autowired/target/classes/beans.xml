@@ -13,21 +13,21 @@
     <context:annotation-config/>
 
 
-    <bean id="cat11" class="com.mei.pojo.Cat"/>
-<!--    <bean id="cat22" class="com.mei.pojo.Cat"/>-->
-    <bean id="dog1" class="com.mei.pojo.Dog"/>
-    <bean id="person" class="com.mei.pojo.Person"/>
+    <bean id="cat11" class="com.mei.demo01.Cat"/>
+<!--    <bean id="cat22" class="com.mei.demo01.Cat"/>-->
+    <bean id="dog1" class="com.mei.demo01.Dog"/>
+    <bean id="person" class="com.mei.demo01.Person"/>
 <!--
       byName:会自动在容器上下文中查找，和自己对象set方法后面的值对应的beanid
 -->
-<!--    <bean id="person" class="com.mei.pojo.Person" autowire="byName">-->
+<!--    <bean id="person" class="com.mei.demo01.Person" autowire="byName">-->
 <!--        <property name="name" value="徐大亮"/>-->
 <!--    </bean>-->
 
     <!--
       byType:会自动在容器上下文中查找，和自己对象属性类型相同的bean
 -->
-<!--    <bean id="person" class="com.mei.pojo.Person" autowire="byType">-->
+<!--    <bean id="person" class="com.mei.demo01.Person" autowire="byType">-->
 <!--        <property name="name" value="徐大亮"/>-->
 <!--    </bean>-->
 </beans>
